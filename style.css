@@ -1,0 +1,241 @@
+body {
+  background-color: rgb(34, 24, 2);
+  color: white;
+}
+
+h1 {
+  font-family: 'Jura', sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.calculator {
+  display: grid;
+  grid-template-areas:
+    'scrn scrn scrn scrn scrn'
+    'seven eight nine erase erase'
+    'four five six plus minus'
+    'one two three multi divide'
+    'clear deci cero equals equals';
+  grid-template-rows: 60px 50px 50px 50px 50px;
+  grid-template-columns: 50px 50px 50px 50px 50px;
+  grid-gap: 6px;
+  width: 273px;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  border: 2px solid rgb(12, 99, 102);
+  border-radius: 10px;
+  background-color: #0A4B59;
+}
+
+.calculator > div {
+  /* font-family: helvetica;
+  font-size: 25px;
+  color: white;
+  color: #F2AC29; */
+}
+
+#scrn {
+  grid-area: scrn;
+  grid-gap: 50px;
+  background-color: #26717F;
+  color: white;
+  font-family: 'Jura', sans-serif;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 3px;
+  border-radius: 10px;
+}
+
+.utilities {
+  font-family: 'Jura', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #0A4B59;
+}
+
+.utilities:hover,
+.utilities:active,
+.utilities:focus {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+}
+
+.digits {
+  background-color: #26717F;
+  color: rgb(255, 198, 92);
+  font-family: 'Jura', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  transition: background-color 0.4s;
+}
+
+.digits:hover,
+.digits:active
+.digits:focus {
+  background-color: rgb(216, 225, 231);
+  color: rgb(131, 118, 45);
+}
+
+.nine.digits {
+  grid-area: nine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.eight.digits {
+  grid-area: eight;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.seven.digits {
+  grid-area: seven;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.six.digits {
+  grid-area: six;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.five.digits {
+  grid-area: five;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.four.digits {
+  grid-area: four;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.three.digits {
+  grid-area: three;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.two.digits {
+  grid-area: two;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.one.digits {
+  grid-area: one;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.cero.digits {
+  grid-area: cero;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.utilities.clear {
+  grid-area: clear;
+  background-color: rgb(247, 60, 60);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px 5px 25px 5px;
+}
+
+.deci.utilities {
+  grid-area: deci;
+  background-color: #B19F3C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.erase.utilities {
+  grid-area: erase;
+  background-color: rgb(247, 60, 60);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 25px 5px 25px;
+}
+
+.minus.utilities {
+  grid-area: minus;
+  background-color: #B19F3C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.plus.utilities {
+  grid-area: plus;
+  background-color: #B19F3C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.divide.utilities {
+  grid-area: divide;
+  background-color: #B19F3C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.multi.utilities {
+  grid-area: multi;
+  background-color: #B19F3C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.equals.utilities {
+  grid-area: equals;
+  background-color: #B19F3C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
