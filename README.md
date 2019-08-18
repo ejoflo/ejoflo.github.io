@@ -49,3 +49,6 @@ EXTRA CREDIT: Make it look nice! This can be a good portfolio project… but not
 EXTRA CREDIT: Add a “backspace” button, so the user can undo if they click the wrong number.
 
 EXTRA CREDIT: Add keyboard support!
+
+Known bugs:
+- On occasion screen doesn’t hold 0.0000000 type numbers (0.0000025 x .00000034)

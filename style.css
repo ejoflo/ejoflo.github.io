@@ -35,25 +35,17 @@ button {
   background-color: #0A4B59;
 }
 
-.calculator > div {
-  /* font-family: helvetica;
-  font-size: 25px;
-  color: white;
-  color: #F2AC29; */
-}
-
 #scrn {
   grid-area: scrn;
   grid-gap: 50px;
   background-color: #26717F;
   color: white;
   font-family: 'Jura', sans-serif;
-  font-size: 40px;
+  font-size: 39px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 9px;
   padding-bottom: 3px;
   border-radius: 10px;
 }
